@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crud</title>
+    <link rel="icon" type="image/x-icon" href="imgs/crud.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <div class="w-50 mx-auto shadow p-5 m-5">
+        <h1>CRUD SYSTEM</h1>
+        <label for="">Product Name:</label>
+        <input type="text" class="form-control mb-3" id="nameInput" />
+       <div class="alertMessage1 alert alert-danger alert-dismissible fade show d-none"
+        role="alert">
+        <strong>please start with capital letter <br> Enter small letters(max 15) <br> Enter maximum number (3)</strong>
+       </div>
+       
+        <label for="">Product Category:</label>
+        <input type="text" class="form-control mb-3" id="categoryInput" />
+        <div class="alertMessage2 alert alert-danger alert-dismissible fade show d-none"
+        role="alert">
+        <strong>please start with capital letter <br> Enter small letters(max 10) <br> Enter maximum number (5)</strong>
+       </div>
+
+        <label for="">Product price:</label>
+        <input type="number" class="form-control mb-3" id="priceInput" />
+        <div class="alertMessage3 alert alert-danger alert-dismissible fade show d-none"
+        role="alert">
+        <strong>please start with a number <br> Enter maximum number (4) </strong>
+       </div>
+
+
+        <label for="">Product description:</label>
+        <textarea class="form-control mb-3" id="descriptionInput"></textarea>
+        <div class="alertMessage4 alert alert-danger alert-dismissible fade show d-none"
+        role="alert">
+        <strong>please start with capital letter <br> Enter maximum number (15)</strong>
+       </div>
+
+        <!-- ondblclick="savedate(index)" -->
+
+        <button id="addBtn" class="btn btn-outline-info">add product</button>
+
+        <button class="btn btn-outline-info" id="clearbtt">clear</button>
+    </div>
+
+    <input type="text" id="searchinput" placeholder="search..."
+        class="form-control w-50 mx-auto my-5">
+
+    <table class="table container text-center table-striped">
+        <thead>
+            <tr>
+                <th>index</th>
+                <th>name</th>
+                <th>cetegory</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delate</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+           
+
+
+
+
+        </tbody>
+    </table>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
