@@ -1,3 +1,25 @@
 .btn{
- background-color: tomato;
+ background-color: white;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /*home section*/
+
+   #crudBox{
+    width: 100% !important;
+   }
+
+   /*search section*/
+
+   #searchinputab{
+    width: 100% !important;
+    font-size: 1rem !important;
+   }
+
+   /*tabel section*/
+   #tabl {
+   width: 100% !important;
+   font-size: 0.5rem !important;
+  }
+}
+  

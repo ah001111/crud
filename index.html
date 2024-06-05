@@ -11,12 +11,13 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 
-    <div class="w-50 mx-auto shadow p-5 m-5">
+    <div class="w-50 mx-auto shadow p-5 m-5" id="crudBox">
         <h1>CRUD SYSTEM</h1>
         <label for="">Product Name:</label>
         <input type="text" class="form-control mb-3" id="nameInput" />
@@ -52,12 +53,13 @@
         <button id="addBtn" class="btn btn-outline-info">add product</button>
 
         <button class="btn btn-outline-info" id="clearbtt">clear</button>
+
     </div>
 
     <input type="text" id="searchinput" placeholder="search..."
         class="form-control w-50 mx-auto my-5">
 
-    <table class="table container text-center table-striped">
+    <table class="table container text-center table-striped" id="tabl">
         <thead>
             <tr>
                 <th>index</th>
@@ -69,7 +71,7 @@
                 <th>delate</th>
             </tr>
         </thead>
-        <tbody id="tbody">
+        <tbody id="tbody" >
            
 
 
